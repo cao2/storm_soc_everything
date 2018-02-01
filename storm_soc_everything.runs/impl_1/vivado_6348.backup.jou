@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Feb  1 14:18:20 2018
+# Process ID: 6348
+# Current directory: C:/Users/cao2/storm_soc_everything/storm_soc_everything.runs/impl_1
+# Command line: vivado.exe -log STORM_SoC_basic.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source STORM_SoC_basic.tcl -notrace
+# Log file: C:/Users/cao2/storm_soc_everything/storm_soc_everything.runs/impl_1/STORM_SoC_basic.vdi
+# Journal file: C:/Users/cao2/storm_soc_everything/storm_soc_everything.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source STORM_SoC_basic.tcl -notrace

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/spi_controller/rtl/verilog" --include "../../../../storm_soc_everything.srcs/sources_1/imports/trunk/basic_system/software/lib" --include "../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/i2c_controller/software/include" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/spi_controller/rtl/verilog/spi_clgen.v" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/spi_controller/rtl/verilog/spi_shift.v" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/spi_controller/rtl/verilog/spi_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

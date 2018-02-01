@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1517512550">
+  <File Type="PA-TCL" Name="STORM_SoC_basic.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="STORM_SoC_basic_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="STORM_SoC_basic_reports.tcl"/>
+  <File Type="RDS-RDS" Name="STORM_SoC_basic.vds"/>
+  <File Type="RDS-UTIL" Name="STORM_SoC_basic_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="STORM_SoC_basic_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="STORM_SoC_basic.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="STORM_SoC_basic_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="STORM_SoC_basic_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/CORE_PKG.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/CORE_PKG.vhd"/>
+        <Attr Name="ImportTime" Val="1337105310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1333608358"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/BARREL_SHIFTER.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/BARREL_SHIFTER.vhd"/>
+        <Attr Name="ImportTime" Val="1332929059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/boot_rom/rtl/BOOT_ROM_FILE.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/boot_rom/rtl/BOOT_ROM_FILE.vhd"/>
+        <Attr Name="ImportTime" Val="1337890620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/BUS_UNIT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/BUS_UNIT.vhd"/>
+        <Attr Name="ImportTime" Val="1337105310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/CACHE.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/CACHE.vhd"/>
+        <Attr Name="ImportTime" Val="1332929059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/CORE.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/CORE.vhd"/>
+        <Attr Name="ImportTime" Val="1337105310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/FLOW_CTRL.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/FLOW_CTRL.vhd"/>
+        <Attr Name="ImportTime" Val="1337105310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/io_controller/rtl/GP_IO_CTRL.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/io_controller/rtl/GP_IO_CTRL.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/LOAD_STORE_UNIT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/LOAD_STORE_UNIT.vhd"/>
+        <Attr Name="ImportTime" Val="1332929059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/MC_SYS.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/MC_SYS.vhd"/>
+        <Attr Name="ImportTime" Val="1337105310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/sram_memory/rtl/MEMORY.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/sram_memory/rtl/MEMORY.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/miniuart/rtl/vhdl/MINI_UART.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/miniuart/rtl/vhdl/MINI_UART.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/MS_UNIT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/MS_UNIT.vhd"/>
+        <Attr Name="ImportTime" Val="1332929059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/MULTIPLY_UNIT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/MULTIPLY_UNIT.vhd"/>
+        <Attr Name="ImportTime" Val="1330004426"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/OPCODE_DECODER.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/OPCODE_DECODER.vhd"/>
+        <Attr Name="ImportTime" Val="1337105310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/OPERAND_UNIT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/OPERAND_UNIT.vhd"/>
+        <Attr Name="ImportTime" Val="1332929059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/pwm_controller/rtl/PWM_CTRL.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/pwm_controller/rtl/PWM_CTRL.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/REG_FILE.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/REG_FILE.vhd"/>
+        <Attr Name="ImportTime" Val="1337105310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/reset_protector/rtl/RST_PROTECT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/reset_protector/rtl/RST_PROTECT.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/miniuart/rtl/vhdl/Rxunit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/miniuart/rtl/vhdl/Rxunit.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/STORM_TOP.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/STORM_TOP.vhd"/>
+        <Attr Name="ImportTime" Val="1333608358"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/timer/rtl/TIMER.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/timer/rtl/TIMER.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/miniuart/rtl/vhdl/Txunit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/miniuart/rtl/vhdl/Txunit.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/vector_interrupt_controller/rtl/VIC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/vector_interrupt_controller/rtl/VIC.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/WB_UNIT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/storm_core_latest.tar/storm_core_latest/storm_core/trunk/rtl/WB_UNIT.vhd"/>
+        <Attr Name="ImportTime" Val="1332929059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/i2c_controller/rtl/vhdl/i2c_master_bit_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/i2c_controller/rtl/vhdl/i2c_master_bit_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/i2c_controller/rtl/vhdl/i2c_master_byte_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/i2c_controller/rtl/vhdl/i2c_master_byte_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/i2c_controller/rtl/vhdl/i2c_master_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/i2c_controller/rtl/vhdl/i2c_master_top.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/miniuart/rtl/vhdl/utils.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/miniuart/rtl/vhdl/utils.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/basic_system/rtl/STORM_SoC_basic.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/basic_system/rtl/STORM_SoC_basic.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/spi_controller/rtl/verilog/spi_defines.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/spi_controller/rtl/verilog/spi_defines.v"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/spi_controller/rtl/verilog/timescale.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/spi_controller/rtl/verilog/timescale.v"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/spi_controller/rtl/verilog/spi_clgen.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/spi_controller/rtl/verilog/spi_clgen.v"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/spi_controller/rtl/verilog/spi_shift.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/spi_controller/rtl/verilog/spi_shift.v"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/spi_controller/rtl/verilog/spi_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/spi_controller/rtl/verilog/spi_top.v"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/basic_system/rtl/STORM_SoC_basic_TB.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/basic_system/rtl/STORM_SoC_basic_TB.vhd"/>
+        <Attr Name="ImportTime" Val="1358942944"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/seven_segment_controller/rtl/SEVEN_SEG_CTRL.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/seven_segment_controller/rtl/SEVEN_SEG_CTRL.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/ps2core/rtl/vhdl/ps2.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/ps2core/rtl/vhdl/ps2.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/ps2core/rtl/vhdl/ps2_wb.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/ps2core/rtl/vhdl/ps2_wb.vhd"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/basic_system/software/lib/utilities.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/basic_system/software/lib/utilities.h"/>
+        <Attr Name="ImportTime" Val="1338401717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/components/i2c_controller/software/include/oc_i2c_master.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/components/i2c_controller/software/include/oc_i2c_master.h"/>
+        <Attr Name="ImportTime" Val="1337115125"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/basic_system/software/lib/storm_soc_basic.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/basic_system/software/lib/storm_soc_basic.h"/>
+        <Attr Name="ImportTime" Val="1338401717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/basic_system/software/lib/storm_core.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/basic_system/software/lib/storm_core.h"/>
+        <Attr Name="ImportTime" Val="1338401717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/basic_system/software/lib/io_driver.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/basic_system/software/lib/io_driver.h"/>
+        <Attr Name="ImportTime" Val="1338401717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/basic_system/software/lib/uart.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/storm_soc_latest.tar/storm_soc_latest/storm_soc/trunk/basic_system/software/lib/uart.h"/>
+        <Attr Name="ImportTime" Val="1338401717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="STORM_SoC_basic"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/soc_ic/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Documents/GitHub/soc_ic/soc_ic.srcs/constrs_1/imports/soc_ic/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1517248371"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/soc_ic/Basys3_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,54 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto e09828c70e134c09902579d79b79e780 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot STORM_SoC_basic_TB_behav xil_defaultlib.STORM_SoC_basic_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.storm_core_package
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.RST_PROTECT [\RST_PROTECT(trigger_val=2500000...]
+Compiling architecture instruction_decoder of entity xil_defaultlib.OPCODE_DECODER [opcode_decoder_default]
+Compiling architecture flow_ctrl_structure of entity xil_defaultlib.FLOW_CTRL [flow_ctrl_default]
+Compiling architecture mc_sys_structure of entity xil_defaultlib.MC_SYS [\MC_SYS(boot_vec="11111111111100...]
+Compiling architecture adrtu_structure of entity xil_defaultlib.ADR_TRANSLATION_UNIT [adr_translation_unit_default]
+Compiling architecture reg_file_structure of entity xil_defaultlib.REG_FILE [reg_file_default]
+Compiling architecture operand_unit_structure of entity xil_defaultlib.OPERAND_UNIT [operand_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MULTIPLY_UNIT [multiply_unit_default]
+Compiling architecture structure of entity xil_defaultlib.BARREL_SHIFTER [barrel_shifter_default]
+Compiling architecture structural of entity xil_defaultlib.MS_UNIT [ms_unit_default]
+Compiling architecture alu_structure of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture structure of entity xil_defaultlib.LOAD_STORE_UNIT [load_store_unit_default]
+Compiling architecture structure of entity xil_defaultlib.WB_UNIT [wb_unit_default]
+Compiling architecture core_structure of entity xil_defaultlib.CORE [\CORE(boot_vec="1111111111110000...]
+Compiling architecture behavioral of entity xil_defaultlib.CACHE [\CACHE(page_size=32,log2_page_si...]
+Compiling architecture structure of entity xil_defaultlib.BUS_UNIT [\BUS_UNIT(i_cache_pages=8,log2_i...]
+Compiling architecture structure of entity xil_defaultlib.STORM_TOP [\STORM_TOP(boot_vector="11111111...]
+Compiling architecture behavioral of entity xil_defaultlib.MEMORY [\MEMORY(mem_size=8192,log2_mem_s...]
+Compiling architecture behavioral of entity xil_defaultlib.BOOT_ROM_FILE [\BOOT_ROM_FILE(mem_size=2048,log...]
+Compiling architecture structure of entity xil_defaultlib.GP_IO_CTRL [gp_io_ctrl_default]
+Compiling architecture behaviour of entity xil_defaultlib.Counter [\Counter(count=1302)\]
+Compiling architecture behaviour of entity xil_defaultlib.Counter [\Counter(count=4)\]
+Compiling architecture behaviour of entity xil_defaultlib.synchroniser [synchroniser_default]
+Compiling architecture behaviour of entity xil_defaultlib.TxUnit [txunit_default]
+Compiling architecture behaviour of entity xil_defaultlib.RxUnit [rxunit_default]
+Compiling architecture behaviour of entity xil_defaultlib.MINI_UART [\MINI_UART(brdivisor=1302)\]
+Compiling architecture structure of entity xil_defaultlib.TIMER [timer_default]
+Compiling module xil_defaultlib.spi_clgen
+Compiling module xil_defaultlib.spi_shift
+Compiling module xil_defaultlib.spi_top(Tp=1)
+Compiling architecture structural of entity xil_defaultlib.i2c_master_bit_ctrl [i2c_master_bit_ctrl_default]
+Compiling architecture structural of entity xil_defaultlib.i2c_master_byte_ctrl [i2c_master_byte_ctrl_default]
+Compiling architecture structural of entity xil_defaultlib.i2c_master_top [\i2c_master_top(arst_lvl='1')\]
+Compiling architecture structure of entity xil_defaultlib.PWM_CTRL [pwm_ctrl_default]
+Compiling architecture structure of entity xil_defaultlib.VIC [vic_default]
+Compiling architecture structure of entity xil_defaultlib.STORM_SoC_basic [storm_soc_basic_default]
+Compiling architecture structure of entity xil_defaultlib.storm_soc_basic_tb
+Built simulation snapshot STORM_SoC_basic_TB_behav

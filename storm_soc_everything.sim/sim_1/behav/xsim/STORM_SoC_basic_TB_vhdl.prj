@@ -1,0 +1,37 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/CORE_PKG.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/ALU.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/BARREL_SHIFTER.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/boot_rom/rtl/BOOT_ROM_FILE.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/BUS_UNIT.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/CACHE.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/CORE.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/FLOW_CTRL.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/io_controller/rtl/GP_IO_CTRL.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/LOAD_STORE_UNIT.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/MC_SYS.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/sram_memory/rtl/MEMORY.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/miniuart/rtl/vhdl/MINI_UART.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/MS_UNIT.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/MULTIPLY_UNIT.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/OPCODE_DECODER.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/OPERAND_UNIT.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/pwm_controller/rtl/PWM_CTRL.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/REG_FILE.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/reset_protector/rtl/RST_PROTECT.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/miniuart/rtl/vhdl/Rxunit.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/basic_system/rtl/STORM_SoC_basic.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/STORM_TOP.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/timer/rtl/TIMER.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/miniuart/rtl/vhdl/Txunit.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/vector_interrupt_controller/rtl/VIC.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/rtl/WB_UNIT.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/i2c_controller/rtl/vhdl/i2c_master_bit_ctrl.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/i2c_controller/rtl/vhdl/i2c_master_byte_ctrl.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/i2c_controller/rtl/vhdl/i2c_master_top.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/components/miniuart/rtl/vhdl/utils.vhd" \
+"../../../../storm_soc_everything.srcs/sources_1/imports/trunk/basic_system/rtl/STORM_SoC_basic_TB.vhd" \
+
+# Do not sort compile order
+nosort

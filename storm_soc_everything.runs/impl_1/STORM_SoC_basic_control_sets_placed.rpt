@@ -1,0 +1,217 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Feb  1 14:19:50 2018
+| Host         : ENB222-PC2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file STORM_SoC_basic_control_sets_placed.rpt
+| Design       : STORM_SoC_basic
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   146 |
+| Unused register locations in slices containing registers |   370 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              90 |           46 |
+| No           | No                    | Yes                    |              83 |           27 |
+| No           | Yes                   | No                     |             744 |          315 |
+| Yes          | No                    | No                     |              98 |           30 |
+| Yes          | No                    | Yes                    |              25 |           14 |
+| Yes          | Yes                   | No                     |            2998 |         1142 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|         Clock Signal         |                                  Enable Signal                                  |                             Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  GP_UART_0/Uart_RxUnit/RRegL |                                                                                 | GP_UART_0/Uart_RxUnit/RxAv_i_1_n_0                                       |                1 |              1 |
+|  GP_UART_0/LoadA             |                                                                                 | GP_UART_0/Uart_TxUnit/SyncLoad/R                                         |                1 |              1 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | GP_UART_0/Uart_TxUnit/SyncLoad/R                                         |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/RReg[0]_i_1_n_0                                           | SYSCON_RST/SAVE_RST                                                      |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/RReg[3]_i_1_n_0                                           | SYSCON_RST/SAVE_RST                                                      |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/RReg[2]_i_1_n_0                                           | SYSCON_RST/SAVE_RST                                                      |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/RReg[5]_i_1_n_0                                           | SYSCON_RST/SAVE_RST                                                      |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/RReg[7]_i_1_n_0                                           | SYSCON_RST/SAVE_RST                                                      |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/RReg[6]_i_1_n_0                                           | SYSCON_RST/SAVE_RST                                                      |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/RReg[1]_i_1_n_0                                           | SYSCON_RST/SAVE_RST                                                      |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/RReg[4]_i_1_n_0                                           | SYSCON_RST/SAVE_RST                                                      |                1 |              1 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_SYS[31]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |                1 |              4 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/BitPos                                                    | SYSCON_RST/SAVE_RST                                                      |                1 |              4 |
+|  CLK_I_IBUF_BUFG             | I2C_CONTROLLER_0/byte_ctrl/bit_ctrl/cr_reg[7]                                   |                                                                          |                1 |              4 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_FIQ[31]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |                2 |              4 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/E[1]                       | SYSCON_RST/SAVE_RST                                                      |                4 |              4 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_ABT[31]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |                2 |              4 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_SVC[31]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |                1 |              4 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_IRQ[31]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |                2 |              4 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/WB_CTRL_reg[20]                                     | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/WB_CTRL[20]_i_1_n_0 |                1 |              4 |
+|  CLK_I_IBUF_BUFG             | VECTOR_INTERRUPT_CONTROLLER/IRQ_ID[3]_i_1_n_0                                   | SYSCON_RST/SAVE_RST                                                      |                2 |              4 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_UND[31]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |                2 |              4 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_Txrate/EnabTx                                                    | SYSCON_RST/SAVE_RST                                                      |                2 |              5 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/E[0]                       | SYSCON_RST/SAVE_RST                                                      |                3 |              5 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[9][0][0]                              | SYSCON_RST/SAVE_RST                                                      |                2 |              6 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | STORM_TOP_INST/BUS_UNIT_INST/WB_DATA_O_reg[7]                            |                1 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[1][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                1 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[12][5][0]                             | SYSCON_RST/SAVE_RST                                                      |                3 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[7][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                4 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[0][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                4 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[8][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                3 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[3][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                1 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[5][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                2 |              6 |
+|  CLK_I_IBUF_BUFG             | I2C_CONTROLLER_0/byte_ctrl/bit_ctrl/FSM_sequential_c_state[4]_i_1_n_0           |                                                                          |                3 |              6 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | VECTOR_INTERRUPT_CONTROLLER/IRQ_ACK[29]_i_1_n_0                          |                1 |              6 |
+|  CLK_I_IBUF_BUFG             | SYSCON_RST/fSDA0                                                                |                                                                          |                2 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[15][0][0]                             | SYSCON_RST/SAVE_RST                                                      |                2 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[10][5][0]                             | SYSCON_RST/SAVE_RST                                                      |                2 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[2][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                2 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[4][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                3 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[14][5][0]                             | SYSCON_RST/SAVE_RST                                                      |                3 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[11][0][0]                             | SYSCON_RST/SAVE_RST                                                      |                3 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[6][5][0]                              | SYSCON_RST/SAVE_RST                                                      |                2 |              6 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCHN_ASN_reg[13][5][0]                             | SYSCON_RST/SAVE_RST                                                      |                2 |              6 |
+|  CLK_I_IBUF_BUFG             | I2C_CONTROLLER_0/byte_ctrl/bit_ctrl/c_state                                     |                                                                          |                3 |              7 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | SYSCON_RST/VALID_FLAG0                                                   |                3 |              8 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_TxUnit/TReg0                                                     |                                                                          |                1 |              8 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/prer[1]                                            |                                                                          |                2 |              8 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/ctr_reg[7]                                         |                                                                          |                2 |              8 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_RxUnit/DataO[7]_i_1_n_0                                          | SYSCON_RST/SAVE_RST                                                      |                3 |              8 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/txr_reg[7]_0                                       |                                                                          |                4 |              8 |
+|  CLK_I_IBUF_BUFG             | GP_UART_0/Uart_TxUnit/SyncLoad/E[0]                                             |                                                                          |                2 |              8 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | SYSCON_RST/VALID_FLAG0_0                                                 |                4 |              8 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/prer[0]                                            |                                                                          |                3 |              8 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | STORM_TOP_INST/BUS_UNIT_INST/wb_dat_o_reg[7][0]                          |                5 |              8 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | SYSCON_RST/IRQ_ACK_reg[31]                                               |                4 |              9 |
+|  CLK_I_IBUF_BUFG             | I2C_CONTROLLER_0/byte_ctrl/dcnt                                                 |                                                                          |                3 |             11 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/WB_CTRL_reg[20]                                     | SYSCON_RST/SAVE_RST                                                      |                4 |             11 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/MCR_PC_reg[19]_0           | SYSCON_RST/SAVE_RST                                                      |                6 |             12 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | SYSCON_RST/IRQ_ACK_reg[14]                                               |                7 |             14 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/MCR_PC_reg[19]_0           | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/MCR_PC_reg[5]_0     |                8 |             15 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/CP_REG_FILE_reg[8][22][0]  | STORM_TOP_INST/D_CACHE_INST/SR[0]                                        |                5 |             16 |
+|  CLK_I_IBUF_BUFG             | SYSTEM_TIMER_0/PRSC_REG0                                                        | SYSCON_RST/PRSC_REG_reg[15]                                              |                4 |             16 |
+|  CLK_I_IBUF_BUFG             | I2C_CONTROLLER_0/byte_ctrl/bit_ctrl/cnt[15]_i_1_n_0                             |                                                                          |                4 |             16 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/WB_ACK_CNT_NXT                                     | SYSCON_RST/SAVE_RST                                                      |                6 |             16 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/CP_REG_FILE_reg[8][4][0]                            | STORM_TOP_INST/I_CACHE_INST/SR[0]                                        |                5 |             16 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/E[0]                                                | SYSCON_RST/SAVE_RST                                                      |               15 |             19 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/CP_REG_FILE_reg[13][7][0]  | SYSCON_RST/SAVE_RST                                                      |               14 |             24 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/PAGE_BASE_ADR[1]_44                                 | SYSCON_RST/SAVE_RST                                                      |                5 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/PAGE_BASE_ADR[2]_42                                 | SYSCON_RST/SAVE_RST                                                      |                5 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/PAGE_BASE_ADR[3]_45                                 | SYSCON_RST/SAVE_RST                                                      |                6 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/BASE_BUF_NXT                                       | SYSCON_RST/SAVE_RST                                                      |               12 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/PAGE_BASE_ADR[4]_1                                  | SYSCON_RST/SAVE_RST                                                      |                8 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/PAGE_BASE_ADR[7]_47                                 | SYSCON_RST/SAVE_RST                                                      |                4 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/PAGE_BASE_ADR[6]_0                                  | SYSCON_RST/SAVE_RST                                                      |                6 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/PAGE_BASE_ADR[0]_3                                  | SYSCON_RST/SAVE_RST                                                      |                8 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/PAGE_BASE_ADR[1]_4                                  | SYSCON_RST/SAVE_RST                                                      |                7 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/PAGE_BASE_ADR[2]_2                                  | SYSCON_RST/SAVE_RST                                                      |                6 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/PAGE_BASE_ADR[5]_6                                  | SYSCON_RST/SAVE_RST                                                      |                8 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/PAGE_BASE_ADR[3]_5                                  | SYSCON_RST/SAVE_RST                                                      |                6 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/PAGE_BASE_ADR[7]_7                                  | SYSCON_RST/SAVE_RST                                                      |                8 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/PAGE_BASE_ADR[4]_41                                 | SYSCON_RST/SAVE_RST                                                      |                6 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/PAGE_BASE_ADR[5]_46                                 | SYSCON_RST/SAVE_RST                                                      |                4 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/PAGE_BASE_ADR[6]_40                                 | SYSCON_RST/SAVE_RST                                                      |                5 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/PAGE_BASE_ADR[0]_43                                 | SYSCON_RST/SAVE_RST                                                      |                5 |             25 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_FIQ[27]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |               10 |             28 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_SVC[27]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |                9 |             28 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_ABT[27]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |               10 |             28 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/CP_REG_FILE[6]1            | SYSCON_RST/SAVE_RST                                                      |               12 |             28 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_IRQ[27]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |               10 |             28 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_SYS[27]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |                9 |             28 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Machine_Control_System/SMSR_UND[27]_i_1_n_0       | SYSCON_RST/SAVE_RST                                                      |               12 |             28 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/IC_ADR_BUF_NXT                                     | SYSCON_RST/SAVE_RST                                                      |               12 |             31 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/DAT_BUF[31]_i_1_n_0                                 | SYSCON_RST/SAVE_RST                                                      |               13 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[7][31][0]                             | SYSCON_RST/SAVE_RST                                                      |               11 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[14][31]_0[0]                          | SYSCON_RST/SAVE_RST                                                      |               13 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[4][31]_0[0]                           | SYSCON_RST/SAVE_RST                                                      |               15 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SWI_ENABLE_reg[31]_0[0]                            | SYSCON_RST/SAVE_RST                                                      |               23 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[9][31][0]                             | SYSCON_RST/SAVE_RST                                                      |               11 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[8][31][0]                             | SYSCON_RST/SAVE_RST                                                      |               15 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[2][31][0]                             | SYSCON_RST/SAVE_RST                                                      |               11 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[6][31][0]                             | SYSCON_RST/SAVE_RST                                                      |               13 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[1][31][0]                             | SYSCON_RST/SAVE_RST                                                      |               16 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[5][31]_0[0]                           | SYSCON_RST/SAVE_RST                                                      |               14 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/TRIG_MODE_reg[31][0]                               | SYSCON_RST/SAVE_RST                                                      |               14 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/DAT_BUF[31]_i_1__0_n_0                              | SYSCON_RST/SAVE_RST                                                      |               29 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/TRIG_LEVL_reg[31][0]                               | SYSCON_RST/SAVE_RST                                                      |               19 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/UV_ISR_ADR_reg[31][0]                              | SYSCON_RST/SAVE_RST                                                      |               15 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/VALUE_REG_reg[14][0]                               | SYSCON_RST/SAVE_RST                                                      |                9 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[10][31][0]                            | SYSCON_RST/SAVE_RST                                                      |               13 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SCRATCH_REG_reg[8][0]                              | SYSCON_RST/SAVE_RST                                                      |                9 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[13][31][0]                            | SYSCON_RST/SAVE_RST                                                      |                9 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/CP_REG_FILE_reg[11][31][0] | SYSCON_RST/SAVE_RST                                                      |                8 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/CP_REG_FILE_reg[12][31][0] | SYSCON_RST/SAVE_RST                                                      |               17 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[12][31][0]                            | SYSCON_RST/SAVE_RST                                                      |               16 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[11][31][0]                            | SYSCON_RST/SAVE_RST                                                      |               10 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/PWM_CONF_reg[7][7]_0[0]                            | SYSCON_RST/SAVE_RST                                                      |               13 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/PWM_CONF_reg[3][7][0]                              | SYSCON_RST/SAVE_RST                                                      |               10 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/INSTR_REG[31]_i_1_n_0      | SYSCON_RST/SAVE_RST                                                      |                7 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/INSTR_REG1                 | SYSCON_RST/SAVE_RST                                                      |                9 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/INT_SELECT_reg[0][0]                               | SYSCON_RST/SAVE_RST                                                      |               15 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/INT_ENABLE_reg[31][0]                              | SYSCON_RST/SAVE_RST                                                      |               23 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/COUNT_REG_reg[7][0]                                | SYSTEM_TIMER_0/COUNT_REG[31]_i_1_n_0                                     |                5 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[15][31][0]                            | SYSCON_RST/SAVE_RST                                                      |               12 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/CONFIG_REG_reg[8]_0[0]                             | SYSCON_RST/SAVE_RST                                                      |               11 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[3][31]_0[0]                           | SYSCON_RST/SAVE_RST                                                      |               22 |             32 |
+|  CLK_I_IBUF_BUFG             | SYSCON_RST/RST_CNT[0]_i_2_n_0                                                   | SYSCON_RST/RST_CNT[0]_i_1_n_0                                            |                8 |             32 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | SYSCON_RST/SR[0]                                                         |               11 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/DC_ADR_BUF_NXT                                     | SYSCON_RST/SAVE_RST                                                      |               19 |             32 |
+|  CLK_I_IBUF_BUFG             | VECTOR_INTERRUPT_CONTROLLER/ISR_ADR[31]_i_1_n_0                                 | SYSCON_RST/SAVE_RST                                                      |               28 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/WB_ADR_BUF_NXT                                     | SYSCON_RST/SAVE_RST                                                      |               15 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/SISR_ADR_reg[0][31][0]                             | SYSCON_RST/SAVE_RST                                                      |               12 |             32 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | STORM_TOP_INST/BUS_UNIT_INST/WB_DATA_O_reg[31]_1[0]                      |               26 |             32 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | STORM_TOP_INST/BUS_UNIT_INST/WB_DATA_O_reg[31]_0[0]                      |               10 |             32 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | STORM_TOP_INST/BUS_UNIT_INST/WB_DATA_O_reg[31][0]                        |               15 |             32 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | STORM_TOP_INST/BUS_UNIT_INST/SR[0]                                       |                9 |             32 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/E[0]                                               | SYSCON_RST/SAVE_RST                                                      |               10 |             40 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/PC_DELAY_BUF_reg[0][31][0] | SYSCON_RST/SAVE_RST                                                      |               33 |             64 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/I_CACHE_INST/ADR_BUF_NXT                                         | SYSCON_RST/SAVE_RST                                                      |               27 |             66 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/D_CACHE_INST/ADR_BUF_NXT                                         | SYSCON_RST/SAVE_RST                                                      |               24 |             69 |
+|  PWM_CLK                     |                                                                                 | SYSCON_RST/SAVE_RST                                                      |               21 |             72 |
+|  CLK_I_IBUF_BUFG             |                                                                                 |                                                                          |               46 |             90 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/DEC_CTRL_FF[45]_i_1_n_0    | SYSCON_RST/SAVE_RST                                                      |               38 |             95 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/PROCESSOR_CORE/Operation_Flow_Control/p_0_in2_out                |                                                                          |               18 |            144 |
+|  CLK_I_IBUF_BUFG             | STORM_TOP_INST/BUS_UNIT_INST/p_0_in                                             | SYSCON_RST/SAVE_RST                                                      |              159 |            514 |
+|  CLK_I_IBUF_BUFG             |                                                                                 | SYSCON_RST/SAVE_RST                                                      |              222 |            533 |
++------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    11 |
+| 4      |                    11 |
+| 5      |                     2 |
+| 6      |                    20 |
+| 7      |                     1 |
+| 8      |                    10 |
+| 9      |                     1 |
+| 11     |                     2 |
+| 12     |                     1 |
+| 14     |                     1 |
+| 15     |                     1 |
+| 16+    |                    85 |
++--------+-----------------------+
+
+
