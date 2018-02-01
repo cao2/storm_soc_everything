@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Feb  1 14:20:46 2018
+| Date         : Thu Feb  1 16:30:29 2018
 | Host         : ENB222-PC2 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file STORM_SoC_basic_timing_summary_routed.rpt -rpx STORM_SoC_basic_timing_summary_routed.rpx -warn_on_violation
 | Design       : STORM_SoC_basic
