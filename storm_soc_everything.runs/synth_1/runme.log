@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7900 
+INFO: Helper process launched with PID 9972 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 397.750 ; gain = 97.691
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 398.426 ; gain = 98.426
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'STORM_SoC_basic' [C:/Users/cao2/storm_soc_everything/storm_soc_everything.srcs/sources_1/imports/trunk/basic_system/rtl/STORM_SoC_basic.vhd:75]
 	Parameter TRIGGER_VAL bound to: 25000000 - type: integer 
@@ -314,7 +314,7 @@ WARNING: [Synth 8-3331] design BOOT_ROM_FILE has unconnected port WB_DATA_I[2]
 WARNING: [Synth 8-3331] design BOOT_ROM_FILE has unconnected port WB_DATA_I[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 502.145 ; gain = 202.086
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 503.324 ; gain = 203.324
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -325,7 +325,7 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 WARNING: [Synth 8-3295] tying undriven pin VECTOR_INTERRUPT_CONTROLLER:IRQ_LINES_I[4] to constant 0 [C:/Users/cao2/storm_soc_everything/storm_soc_everything.srcs/sources_1/imports/trunk/basic_system/rtl/STORM_SoC_basic.vhd:1070]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 502.145 ; gain = 202.086
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 503.324 ; gain = 203.324
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -341,22 +341,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 846.688 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 844.629 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 846.750 ; gain = 546.691
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 844.691 ; gain = 544.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 846.750 ; gain = 546.691
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 844.691 ; gain = 544.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 846.750 ; gain = 546.691
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 844.691 ; gain = 544.691
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element RST_CNT_reg was removed.  [C:/Users/cao2/storm_soc_everything/storm_soc_everything.srcs/sources_1/imports/trunk/components/reset_protector/rtl/RST_PROTECT.vhd:45]
 INFO: [Synth 8-5544] ROM "DEC_CTRL" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -587,7 +587,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encodin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'statemachine.c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 846.750 ; gain = 546.691
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 844.691 ; gain = 544.691
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1371,7 +1371,7 @@ WARNING: [Synth 8-3332] Sequential element (BUS_UNIT_INST/DC_P_ADR_BUF_reg[4]) i
 WARNING: [Synth 8-3332] Sequential element (BUS_UNIT_INST/DC_P_ADR_BUF_reg[3]) is unused and will be removed from module STORM_TOP.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 848.613 ; gain = 548.555
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 844.691 ; gain = 544.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1436,13 +1436,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 996.027 ; gain = 695.969
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 988.063 ; gain = 688.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1056.012 ; gain = 755.953
+Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1047.613 ; gain = 747.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1502,7 +1502,7 @@ INFO: [Synth 8-4480] The timing for the instance INTERNAL_SRAM_MEMORY/MEM_FILE_r
 INFO: [Synth 8-4480] The timing for the instance BOOT_MEMORY/WB_DATA_INT_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance BOOT_MEMORY/WB_DATA_INT_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1177.824 ; gain = 877.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1527,7 +1527,7 @@ INFO: [Synth 8-6064] Net \STORM_TOP_INST/BUS_UNIT_INST/WB_WE_O_reg_rep_n_0  is d
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 1177.824 ; gain = 877.824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1540,7 +1540,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 1177.824 ; gain = 877.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1552,25 +1552,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1177.824 ; gain = 877.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1177.824 ; gain = 877.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1177.824 ; gain = 877.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1177.824 ; gain = 877.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1653,14 +1653,14 @@ Report Instance Areas:
 |30    |  VECTOR_INTERRUPT_CONTROLLER |VIC                     |  2442|
 +------+------------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1177.824 ; gain = 877.824
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 480 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:25 ; elapsed = 00:01:39 . Memory (MB): peak = 1208.766 ; gain = 564.102
-Synthesis Optimization Complete : Time (s): cpu = 00:01:45 ; elapsed = 00:01:49 . Memory (MB): peak = 1208.766 ; gain = 908.707
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 1177.824 ; gain = 536.457
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1177.824 ; gain = 877.824
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 450 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -1671,8 +1671,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 443 Infos, 232 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:49 ; elapsed = 00:01:56 . Memory (MB): peak = 1208.766 ; gain = 920.762
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 1177.824 ; gain = 890.203
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cao2/storm_soc_everything/storm_soc_everything.runs/synth_1/STORM_SoC_basic.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file STORM_SoC_basic_utilization_synth.rpt -pb STORM_SoC_basic_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1208.766 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Feb  1 16:27:47 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1177.824 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Feb  2 23:45:06 2018...
